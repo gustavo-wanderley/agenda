@@ -1,29 +1,19 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public abstract class DB {
-    private Map<Character, List<Person>> contacts;
-
-    public DB() {
-        contacts = new HashMap<>();
-    }
+    protected Map<Character, List<Person>> contacts;
 
 
-    public List<Person> searchPerson(Person person){
-        return null;
-    }
-    public boolean addPerson(Person person) {
-        return true;
-    }
+    public abstract Person searchPerson(Person person);
 
-    public boolean changePerson(Person person) {
-        return true;
-    }
+    public abstract boolean addPerson(Person person);
 
-    public boolean removePerson(Person person) {
-        return true;
-    }
+    public abstract boolean changePerson(Person person);
+
+    public abstract boolean removePerson(Person person);
 }
