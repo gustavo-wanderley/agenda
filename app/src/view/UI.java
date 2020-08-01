@@ -8,14 +8,14 @@ public class UI {
 
     static Scanner scanner = new Scanner(System.in);
 
-    static public Document inputCpf(){
+    static public CPF inputCpf(){
         String cpf;
         cpf = scanner.next();
         return new CPF(cpf);
     }
 
 
-    static  public Document inputCnpj(){
+    static  public CNPJ inputCnpj(){
         String cnpj;
         cnpj = scanner.next();
         return new CNPJ(cnpj);
@@ -45,9 +45,13 @@ public class UI {
     static public Phone inputPhone(){
         int number;
         number = scanner.nextInt();
-
         return new Phone(number);
     }
 
+    static public String inputName(){
+        String name;
+        name = scanner.next();
+        return name;
+    }
 
 }

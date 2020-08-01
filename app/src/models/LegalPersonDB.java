@@ -7,7 +7,7 @@ import java.util.List;
 public class LegalPersonDB extends DB{
 
     public LegalPersonDB(){
-        contacts = new HashMap<Character, List<Person>>();
+        contacts = new HashMap<>();
     }
 
     @Override
@@ -38,8 +38,10 @@ public class LegalPersonDB extends DB{
 
     @Override
     public boolean changePerson(Person person) {
-        // o que eu faço ????
-        return false;
+        char letter = person.getName().toLowerCase().charAt(0);
+        var persons = contacts.get(letter);
+        removePerson(person);
+        return persons.add(person);
     }
 
     @Override
