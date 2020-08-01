@@ -1,7 +1,8 @@
 package models;
 
 public class CPF extends Document{
-    public CPF(){
+    public CPF(String number){
+        setNumber(number);
 
     }
     @Override

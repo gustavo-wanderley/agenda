@@ -1,6 +1,8 @@
 package controllers;
 
-public class LegalPersonAgenda {
+import view.Agenda;
+
+public class LegalPersonAgenda  {
 
 
 }

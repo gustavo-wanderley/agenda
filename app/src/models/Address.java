@@ -7,6 +7,14 @@ public class Address {
     private String state;
     private String country;
 
+    public Address(String street, String numberHouse, String city, String state, String country) {
+        this.street = street;
+        this.numberHouse = numberHouse;
+        this.city = city;
+        this.state = state;
+        this.country = country;
+    }
+
     public String getStreet() {
         return street;
     }

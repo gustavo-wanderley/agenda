@@ -2,8 +2,8 @@ package models;
 
 public class CNPJ  extends Document{
 
-    public CNPJ(){
-
+    public CNPJ(String number){
+        setNumber(number);
     }
     @Override
     public String toString() {

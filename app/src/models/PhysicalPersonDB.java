@@ -1,11 +1,12 @@
 package models;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class PhysicalPersonDB extends DB {
 
     public PhysicalPersonDB(){
-        contacts = new HashMap<>();
+        contacts = new HashMap<Character, List<Person>>();
     }
 
     @Override
