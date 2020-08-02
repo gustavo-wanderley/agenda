@@ -1,6 +1,9 @@
 package controllers;
 
-public class PhysicalPersonAgenda {
+import view.Agenda;
+
+public class PhysicalPersonAgenda extends Agenda {
+
 
 
 }

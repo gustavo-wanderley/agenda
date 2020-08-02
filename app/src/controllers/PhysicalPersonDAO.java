@@ -1,6 +1,8 @@
 package controllers;
 
-import models.PhysicalPersonDB;
+import models.Person;
+import models.PhysicalPerson;
+import models.database.PhysicalPersonDB;
 
 public class PhysicalPersonDAO extends PersonDAO {
 
@@ -15,12 +17,13 @@ public class PhysicalPersonDAO extends PersonDAO {
 
     @Override
     public void remove(Object o) {
-        super.remove(o);
+        o = (PhysicalPerson) o;
+        database.removePerson((Person) o);
     }
 
     @Override
-    public void search(Object o) {
-        super.search(o);
+    public Object search(Object o) {
+        return super.search(o);
     }
 
     @Override

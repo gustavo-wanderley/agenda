@@ -1,4 +1,4 @@
-package models;
+package models.info;
 
 public class Phone {
     public int number;

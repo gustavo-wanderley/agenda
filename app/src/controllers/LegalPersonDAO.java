@@ -1,7 +1,8 @@
 package controllers;
 import models.LegalPerson;
-import models.LegalPersonDB;
+import models.database.LegalPersonDB;
 import models.Person;
+import models.info.CNPJ;
 
 public class LegalPersonDAO extends PersonDAO {
 
@@ -27,8 +28,12 @@ public class LegalPersonDAO extends PersonDAO {
     }
 
     @Override
-    public void search(Object o) {
-
+    public Object search(Object o) {
+        if(o instanceof CNPJ){
+            LegalPerson legalPerson = new LegalPerson(null, (CNPJ) o, null, null);
+            return database.searchPerson(legalPerson);
+        }
+        return null;
     }
 
     @Override

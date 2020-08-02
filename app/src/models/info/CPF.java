@@ -1,6 +1,6 @@
-package models;
+package models.info;
 
-public class CPF extends Document{
+public class CPF extends Document {
     public CPF(String number){
         setNumber(number);
 

@@ -1,10 +1,12 @@
-package models;
+package models.database;
+
+import models.Person;
+import models.database.DB;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
-public class LegalPersonDB extends DB{
+public class LegalPersonDB extends DB {
 
     public LegalPersonDB(){
         contacts = new HashMap<>();

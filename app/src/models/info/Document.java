@@ -1,4 +1,4 @@
-package models;
+package models.info;
 
 public abstract class Document {
     private String number;

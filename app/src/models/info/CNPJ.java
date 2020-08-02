@@ -1,6 +1,6 @@
-package models;
+package models.info;
 
-public class CNPJ  extends Document{
+public class CNPJ  extends Document {
 
     public CNPJ(String number){
         setNumber(number);

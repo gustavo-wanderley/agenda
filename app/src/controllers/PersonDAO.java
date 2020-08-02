@@ -1,6 +1,6 @@
 package controllers;
 
-import models.DB;
+import models.database.DB;
 
 public abstract class PersonDAO implements DAO {
     protected DB database;
@@ -16,8 +16,8 @@ public abstract class PersonDAO implements DAO {
     }
 
     @Override
-    public void search(Object o) {
-
+    public Object search(Object o) {
+        return null;
     }
 
     @Override

@@ -1,4 +1,6 @@
-package models;
+package models.database;
+
+import models.Person;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,4 +18,5 @@ public abstract class DB {
     public abstract boolean changePerson(Person person);
 
     public abstract boolean removePerson(Person person);
+
 }

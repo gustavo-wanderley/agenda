@@ -1,4 +1,4 @@
-package models;
+package models.info;
 
 public class Address {
     private String street;

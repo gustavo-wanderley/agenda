@@ -1,4 +1,7 @@
-package models;
+package models.database;
+
+import models.Person;
+import models.database.DB;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,16 +16,7 @@ public class PhysicalPersonDB extends DB {
     @Override
     public Person searchPerson(Person person) {
 
-        char letter = person.getName().toLowerCase().charAt(0);
-        if (contacts.containsKey(letter)) {
-            var persons = contacts.get(letter);
-            for (Person p : persons) {
-                if (p.getDocument().equals(person.getDocument()))
-                    return p;
-            }
-            return null;
-        }
-        return null;
+       // for(Entry<Integer, List<Person>> entry : contacts.entrySet())
     }
 
     @Override

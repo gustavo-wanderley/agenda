@@ -1,5 +1,9 @@
 package models;
 
+import models.info.Address;
+import models.info.Document;
+import models.info.Phone;
+
 public abstract class Person {
     private String name;
     private Document document;
